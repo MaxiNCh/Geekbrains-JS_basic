@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<title>task2</title>
+	<script>
+	"use strict";
+
+	function sum(a, b) {
+		return a + b;
+	}
+
+	function dif(a, b) {
+		return a - b;
+	}
+
+	function multiplier(a, b) {
+		return a * b;
+	}
+
+	function divider(a, b) {
+		let c = Math.round((a / b) * 100) / 100;
+		return c;
+	}
+
+	let a = +prompt("Введите первое число");
+	let b = +prompt("Введите второе число");
+
+	alert("Сумма чисел равна " + sum(a, b) +
+		"\nРазность чисел равна" + dif(a, b) +
+		"\nПроизведение чисел равно " + multiplier(a, b) +
+		"\nЧастное от деления " + divider(a, b));
+	</script>
+</head>
+
+<body>
+</body>
+
+</html>

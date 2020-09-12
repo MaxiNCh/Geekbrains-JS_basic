@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<title>task2</title>
+	<script>
+	"use strict";
+
+	function sum(a, b) {
+		return a + b;
+	}
+
+	function dif(a, b) {
+		return a - b;
+	}
+
+	function multiplier(a, b) {
+		return a * b;
+	}
+
+	function divider(a, b) {
+		let c = Math.round((a / b) * 100) / 100;
+		return c;
+	}
+
+	let a = +prompt("Введите первое число");
+	let b = +prompt("Введите второе число");
+	let operation = prompt("Введите один из знаков *, /, +, -");
+
+	function mathOperation(a, b, operation) {
+		switch (operation) {
+			case "*":
+				alert("Произведение чисел равно " + multiplier(a, b));
+				break;
+			case "/":
+				alert("Частное от деления " + divider(a, b));
+				break;
+			case "+":
+				alert("Сумма чисел равна " + sum(a, b));
+				break;
+			case "-":
+				alert("Разность чисел равна " + dif(a, b));
+				break;
+		}
+	}
+
+	mathOperation(a, b, operation);
+	</script>
+</head>
+
+<body>
+</body>
+
+</html>
