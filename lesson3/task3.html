@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>task3</title>
+	<script>
+	"use strict";
+	const products = [{
+			id: 3,
+			price: 200,
+		},
+		{
+			id: 4,
+			price: 900,
+		},
+		{
+			id: 1,
+			price: 1000,
+		},
+	];
+
+	products.forEach(product => {
+		let newPrice = product.price * 0.85;
+		console.log("Цена продукта с id = " + product.id + " равна " + newPrice);
+	})
+	</script>
+</head>
+
+<body>
+</body>
+
+</html>
