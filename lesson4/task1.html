@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>task1</title>
+	<script type="text/javascript">
+	'use strict';
+	// Задание: написать функцию преобразующую число в объект.
+	function Rank(number) {
+		if (Number.isInteger(+number) && number >= 0 && number <= 999) {
+			this._hundreds = Math.floor(number / 100);
+			this._tens = Math.floor((number - 100 * this._hundreds) / 10);
+			this._units = number - 100 * this._hundreds - 10 * this._tens;
+		} else {
+			console.log("Not an integer number between 0 and 999");
+			return {} //Возвращение пустого объекат
+		}
+	}
+
+	let number = prompt("Введите целое число от 0 до 999");
+	const num = new Rank(number);
+	</script>
+</head>
+
+<body>
+</body>
+
+</html>
